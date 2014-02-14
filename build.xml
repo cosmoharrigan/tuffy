@@ -9,7 +9,7 @@
 
     <path id="tuffy.classpath">
         <pathelement location="bin"/>
-		<pathelement location="lib/postgresql-8.4-701.jdbc4.jar"/>
+		<pathelement location="lib/postgresql-9.3-1100.jdbc41.jar"/>
         <pathelement location="lib/antlr-3.2.jar"/>
         <pathelement location="lib/args4j-2.0.12.jar"/>
         <pathelement location="lib/commons-lang3-3.0-beta.jar"/>
