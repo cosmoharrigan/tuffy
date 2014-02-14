@@ -395,7 +395,6 @@ public class RDB {
 	}
 
 	private void updateRaw(String sql) throws SQLException{
-		this.commit();
 		this.setAutoCommit(true);
 		Statement stmt = con.createStatement();
 		currentlyRunningQuery = stmt;
