@@ -713,11 +713,12 @@ public class RDB {
 	 * @see Config#db_schema
 	 */
 	public void resetSchema(String schema) {
-		try {
-			UIMan.verbose(3, "### Checking existence of " + schema);
-			updateRaw("SET search_path = " + schema);
+		UIMan.verbose(3, "### Checking existence of " + schema);
+		if(schemaExists(schema))
+		{
 			UIMan.verbose(3, "### Reusing schema " + schema);
-		} catch (SQLException e) {
+		}
+		else {
 			dropSchema(schema);
 			UIMan.verbose(3, "### Creating schema " + schema);
 			String sql = "CREATE SCHEMA " + schema + " AUTHORIZATION " + Config.db_username;
