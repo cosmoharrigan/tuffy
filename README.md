@@ -6,6 +6,7 @@ http://www.cs.wisc.edu/hazy/tuffy/
 
 In the present folder, run the following two commands to build the jar:
 
+```
 $ ant
 $ ant dist
-
+```
